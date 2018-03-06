@@ -131,6 +131,10 @@ class App extends Component {
     this.state = initialState;
   }
 
+  componentWillMount() {
+    document.title = 'SMART_BRAIN'
+  }
+
   loadUser = (data) => {
     this.setState({user: {
       id: data.id,
